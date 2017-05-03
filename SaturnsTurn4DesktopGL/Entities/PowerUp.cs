@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 
 
-namespace SaturnsTurn3
+namespace SaturnsTurn4DesktopGL
 {
     class PowerUp
     {

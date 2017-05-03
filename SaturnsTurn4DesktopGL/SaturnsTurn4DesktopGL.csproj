@@ -138,47 +138,126 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="app.manifest" />
-    <None Include="Content\Graphics\arialblack50.xnb" />
-    <None Include="Content\Graphics\asteroid01.xnb" />
-    <None Include="Content\Graphics\Backgrounds\ParallaxStars.xnb" />
-    <None Include="Content\Graphics\Backgrounds\PrimaryStar.xnb" />
-    <None Include="Content\Graphics\Backgrounds\saturn1.xnb" />
-    <None Include="Content\Graphics\Backgrounds\star1.xnb" />
-    <None Include="Content\Graphics\Backgrounds\star2.xnb" />
-    <None Include="Content\Graphics\Backgrounds\star3.xnb" />
-    <None Include="Content\Graphics\Backgrounds\star4.xnb" />
-    <None Include="Content\Graphics\Backgrounds\star5.xnb" />
-    <None Include="Content\Graphics\Backgrounds\star6.xnb" />
-    <None Include="Content\Graphics\blank.xnb" />
-    <None Include="Content\Graphics\bold_silver.xnb" />
-    <None Include="Content\Graphics\bolt_bronze.xnb" />
-    <None Include="Content\Graphics\bolt_gold.xnb" />
-    <None Include="Content\Graphics\explosion.xnb" />
-    <None Include="Content\Graphics\firehair.xnb" />
-    <None Include="Content\Graphics\gameFont.xnb" />
-    <None Include="Content\Graphics\gradientgreen.xnb" />
-    <None Include="Content\Graphics\lasergreen.xnb" />
-    <None Include="Content\Graphics\menufont.xnb" />
-    <None Include="Content\Graphics\mineAnimation.xnb" />
-    <None Include="Content\Graphics\mineGreenAnimation.xnb" />
-    <None Include="Content\Graphics\playerShip1_greenrotate5066.xnb" />
-    <None Include="Content\Graphics\shield_bronze.xnb" />
-    <None Include="Content\Graphics\shield_gold.xnb" />
-    <None Include="Content\Graphics\shield_silver.xnb" />
-    <None Include="Content\Graphics\star_bronze.xnb" />
-    <None Include="Content\Graphics\star_gold.xnb" />
-    <None Include="Content\Graphics\star_silver.xnb" />
-    <None Include="Content\Graphics\TextParticle.xnb" />
-    <None Include="Content\Sounds\explosion.xnb" />
-    <None Include="Content\Sounds\gameMusic.xnb" />
-    <None Include="Content\Sounds\laser1.xnb" />
-    <None Include="Content\Sounds\laserFire.xnb" />
-    <None Include="Content\Sounds\PickedPowerup2.xnb" />
-    <None Include="Content\Sounds\title.xnb" />
-    <None Include="Content\Sounds\titlemusic.xnb" />
+    <None Include="Content\Graphics\arialblack50.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\asteroid01.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\ParallaxStars.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\PrimaryStar.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\saturn1.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\star1.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\star2.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\star3.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\star4.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\star5.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\Backgrounds\star6.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\blankolld.xnb" />
+    <None Include="Content\Graphics\bold_silver.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\bolt_bronze.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\bolt_gold.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\explosion.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\firehair.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\gameFont.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\gradientgreen.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\lasergreen.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\menufont.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\mineAnimation.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\mineGreenAnimation.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\playerShip1_greenrotate5066.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\shield_bronze.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\shield_gold.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\shield_silver.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\star_bronze.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\star_gold.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\star_silver.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Graphics\TextParticle.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\explosion.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\gameMusic.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\laser1.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\laserFire.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\PickedPowerup2.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\title.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\titlemusic.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Sounds\titlemusic.wma" />
+    <Content Include="Content\Graphics\blank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\titlemusic.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Effects\" />

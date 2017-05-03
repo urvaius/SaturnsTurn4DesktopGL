@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace SaturnsTurn3.Utility
+namespace SaturnsTurn4DesktopGL.Utility
 {
    public class Animation
     {

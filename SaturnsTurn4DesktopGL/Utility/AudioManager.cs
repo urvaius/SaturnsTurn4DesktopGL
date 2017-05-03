@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Audio;
 
 #endregion
 
-namespace SaturnsTurn3.Utility
+namespace SaturnsTurn4DesktopGL.Utility
 {
     /// <summary>
     /// Component that manages audio playback for all sounds.

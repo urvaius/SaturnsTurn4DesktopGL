@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-namespace SaturnsTurn3.Utility
+namespace SaturnsTurn4DesktopGL.Utility
 {
     class ParticleText
     {

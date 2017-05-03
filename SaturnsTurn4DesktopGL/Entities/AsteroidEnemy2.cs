@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace SaturnsTurn3
+namespace SaturnsTurn4DesktopGL
 {
     class AsteroidEnemy2
     

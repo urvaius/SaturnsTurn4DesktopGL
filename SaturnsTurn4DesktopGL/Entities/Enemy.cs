@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using SaturnsTurn3.Utility;
-namespace SaturnsTurn3
+using SaturnsTurn4DesktopGL.Utility;
+namespace SaturnsTurn4DesktopGL
 {
     class Enemy
     {

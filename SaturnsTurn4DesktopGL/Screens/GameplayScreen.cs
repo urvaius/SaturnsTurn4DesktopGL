@@ -18,10 +18,10 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
-using SaturnsTurn3;
-using SaturnsTurn3.Utility;
+using SaturnsTurn4DesktopGL;
+using SaturnsTurn4DesktopGL.Utility;
 using System.Collections.Generic;
-using SaturnsTurn3.Entities;
+using SaturnsTurn4DesktopGL.Entities;
 
 #endregion
 

@@ -5,9 +5,9 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
-using SaturnsTurn3;
+using SaturnsTurn4DesktopGL;
 using GameStateManagement;
-namespace SaturnsTurn3.Utility
+namespace SaturnsTurn4DesktopGL.Utility
 {
     class Background
     {

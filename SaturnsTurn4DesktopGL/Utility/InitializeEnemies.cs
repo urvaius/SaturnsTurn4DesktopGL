@@ -7,7 +7,7 @@ namespace SaturnsTurn4DesktopGL.Utility
 {
 	public class InitializeEnemies
 	{
-		public void Initialize(string enemyName,string listName,string spawnTimeName,string prevSpawnTimeName,Timespan prevSpawnTime,TimeSpan spawnTime)
+		public void Initialize(string enemyName,string listName,string spawnTimeName,string prevSpawnTimeName,TimeSpan prevSpawnTime,TimeSpan spawnTime)
 
 		{
 
