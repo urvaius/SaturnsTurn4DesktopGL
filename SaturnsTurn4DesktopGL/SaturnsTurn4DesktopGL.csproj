@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
   <PropertyGroup>
@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>43262133-f043-486e-b857-48a4a9725d3a</ProjectGuid>
+    <ProjectGuid>{43262133-F043-486E-B857-48A4A9725D3A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SaturnsTurn4DesktopGL</RootNamespace>
@@ -23,7 +23,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
-	<WarningLevel>4</WarningLevel>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
@@ -33,7 +33,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
-	<WarningLevel>4</WarningLevel>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
@@ -42,68 +42,147 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\AsteroidEnemy.cs" />
+    <Compile Include="Entities\AsteroidEnemy2.cs" />
+    <Compile Include="Entities\Enemy.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\FireHair.cs" />
+    <Compile Include="Entities\GreenMineEnemy.cs" />
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\PowerUp.cs" />
+    <Compile Include="Entities\Projectile.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="Level\Level0.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaturnsTurnGame.cs" />
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\InputState.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs" />
+    <Compile Include="Screens\BackgroundScreen.cs" />
+    <Compile Include="Screens\GameOverScreen.cs" />
+    <Compile Include="Screens\GameplayScreen.cs" />
+    <Compile Include="Screens\KilledMenuScreen.cs" />
+    <Compile Include="Screens\LoadingScreen.cs" />
+    <Compile Include="Screens\MainMenuScreen.cs" />
+    <Compile Include="Screens\MenuEntry.cs" />
+    <Compile Include="Screens\MenuScreen.cs" />
+    <Compile Include="Screens\MessageBoxScreen.cs" />
+    <Compile Include="Screens\OptionsMenuScreen.cs" />
+    <Compile Include="Screens\PauseMenuScreen.cs" />
+    <Compile Include="Screens\PlayerIndexEventArgs.cs" />
+    <Compile Include="Utility\Animation.cs" />
+    <Compile Include="Utility\AudioManager.cs" />
+    <Compile Include="Utility\AudioManagerold.cs" />
+    <Compile Include="Utility\Background.cs" />
+    <Compile Include="Utility\InitializeEnemies.cs" />
+    <Compile Include="Utility\ParallaxingBackground.cs" />
+    <Compile Include="Utility\ParticleText.cs" />
+    <Compile Include="Utility\ScrollingBackground.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
-       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
-	<EmbeddedResource Include="Icon.bmp" />
+    <EmbeddedResource Include="Icon.bmp" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\SDL2.dll">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\SDL2.dll">
       <Link>x86\SDL2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\SDL2.dll">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\SDL2.dll">
       <Link>x64\SDL2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\soft_oal.dll">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\soft_oal.dll">
       <Link>x86\soft_oal.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\soft_oal.dll">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\soft_oal.dll">
       <Link>x64\soft_oal.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-		<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libSDL2-2.0.so.0">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libSDL2-2.0.so.0">
       <Link>x86\libSDL2-2.0.so.0</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libSDL2-2.0.so.0">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libSDL2-2.0.so.0">
       <Link>x64\libSDL2-2.0.so.0</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libopenal.so.1">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libopenal.so.1">
       <Link>x86\libopenal.so.1</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libopenal.so.1">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libopenal.so.1">
       <Link>x64\libopenal.so.1</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libSDL2-2.0.0.dylib">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libSDL2-2.0.0.dylib">
       <Link>libSDL2-2.0.0.dylib</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libopenal.1.dylib">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libopenal.1.dylib">
       <Link>libopenal.1.dylib</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	<None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
       <Link>MonoGame.Framework.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="app.manifest" />
+    <None Include="Content\Graphics\arialblack50.xnb" />
+    <None Include="Content\Graphics\asteroid01.xnb" />
+    <None Include="Content\Graphics\Backgrounds\ParallaxStars.xnb" />
+    <None Include="Content\Graphics\Backgrounds\PrimaryStar.xnb" />
+    <None Include="Content\Graphics\Backgrounds\saturn1.xnb" />
+    <None Include="Content\Graphics\Backgrounds\star1.xnb" />
+    <None Include="Content\Graphics\Backgrounds\star2.xnb" />
+    <None Include="Content\Graphics\Backgrounds\star3.xnb" />
+    <None Include="Content\Graphics\Backgrounds\star4.xnb" />
+    <None Include="Content\Graphics\Backgrounds\star5.xnb" />
+    <None Include="Content\Graphics\Backgrounds\star6.xnb" />
+    <None Include="Content\Graphics\blank.xnb" />
+    <None Include="Content\Graphics\bold_silver.xnb" />
+    <None Include="Content\Graphics\bolt_bronze.xnb" />
+    <None Include="Content\Graphics\bolt_gold.xnb" />
+    <None Include="Content\Graphics\explosion.xnb" />
+    <None Include="Content\Graphics\firehair.xnb" />
+    <None Include="Content\Graphics\gameFont.xnb" />
+    <None Include="Content\Graphics\gradientgreen.xnb" />
+    <None Include="Content\Graphics\lasergreen.xnb" />
+    <None Include="Content\Graphics\menufont.xnb" />
+    <None Include="Content\Graphics\mineAnimation.xnb" />
+    <None Include="Content\Graphics\mineGreenAnimation.xnb" />
+    <None Include="Content\Graphics\playerShip1_greenrotate5066.xnb" />
+    <None Include="Content\Graphics\shield_bronze.xnb" />
+    <None Include="Content\Graphics\shield_gold.xnb" />
+    <None Include="Content\Graphics\shield_silver.xnb" />
+    <None Include="Content\Graphics\star_bronze.xnb" />
+    <None Include="Content\Graphics\star_gold.xnb" />
+    <None Include="Content\Graphics\star_silver.xnb" />
+    <None Include="Content\Graphics\TextParticle.xnb" />
+    <None Include="Content\Sounds\explosion.xnb" />
+    <None Include="Content\Sounds\gameMusic.xnb" />
+    <None Include="Content\Sounds\laser1.xnb" />
+    <None Include="Content\Sounds\laserFire.xnb" />
+    <None Include="Content\Sounds\PickedPowerup2.xnb" />
+    <None Include="Content\Sounds\title.xnb" />
+    <None Include="Content\Sounds\titlemusic.xnb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Sounds\titlemusic.wma" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Effects\" />
+    <Folder Include="Content\Windows\PSM\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

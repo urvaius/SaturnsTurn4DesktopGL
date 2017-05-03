@@ -1,18 +1,26 @@
-﻿using Microsoft.Xna.Framework;
+﻿#region Using Statements
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+//using Microsoft.Xna.Framework.Storage;
+//using Microsoft.Xna.Framework.GamerServices;
+#endregion
 
 namespace SaturnsTurn4DesktopGL
 {
     /// <summary>
-    /// This is the main type for your game.
+    /// This is the main type for your game
     /// </summary>
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        
+
         public Game1()
+            : base()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -45,7 +53,7 @@ namespace SaturnsTurn4DesktopGL
 
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
+        /// all content.
         /// </summary>
         protected override void UnloadContent()
         {
