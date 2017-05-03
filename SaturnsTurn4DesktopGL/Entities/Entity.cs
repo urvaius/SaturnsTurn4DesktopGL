@@ -26,11 +26,17 @@ namespace SaturnsTurn4DesktopGL.Entities
         //the score you will get from killing the entity
         public int Value;
         //get the width of the enemy ship
-        public int Width;
-        
+        public int Width
+        {
+            get { return Texture.Width; } 
 
+        }
         //get the height of the enemy ship
-        public int Height;
+        public int Height
+        {
+            get { return Texture.Height; }
+        }
+            
         
         //the speed of the enemy
         public float entityMoveSpeed;

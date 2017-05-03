@@ -10,16 +10,16 @@ namespace SaturnsTurn4DesktopGL.Entities
     {
 
         Texture2D fireHairTexture;
-        public int Width
-        {
-            get { return fireHairTexture.Width; }
-        }
+        //public int Width
+        //{
+        //    get { return fireHairTexture.Width; }
+        //}
 
         //height of projectile
-        public int Height
-        {
-            get { return fireHairTexture.Height; }
-        }
+        //public int Height
+        //{
+        //    get { return fireHairTexture.Height; }
+        //}
 
         public override void Initialize(Viewport viewport, Texture2D texture, Vector2 position, int damage)
         {
