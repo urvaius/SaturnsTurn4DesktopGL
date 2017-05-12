@@ -31,8 +31,9 @@ namespace GameStateManagement
     /// This screen implements the actual game logic. It is just a
     /// placeholder to get the idea across: you'll probably want to
     /// put some more interesting gameplay in here!
-    /// </summary>
-    class GameplayScreen : GameScreen
+    /// </summaryj>
+    public class GameplayScreen : GameScreen
+        
     {
         #region Fields
         Effect standardEffect;
@@ -675,22 +676,7 @@ namespace GameStateManagement
             }
 
 
-                //for (int i = 0; i < damagePowerUps.Count; i++)
-                //{
-                //    damagePowerUpRectangle = new Rectangle((int)damagePowerUps[i].Position.X, (int)damagePowerUps[i].Position.Y, damagePowerUps[i].Width, damagePowerUps[i].Height);
-                //    if (playerRectangle.Intersects(damagePowerUpRectangle))
-                //    {
-
-                //        AudioManager.PlaySound("powerup");
-                //        // moved the damage mod to the powerup class
-                //        damagePowerUps[i].PowerUpCollision();
-
-
-
-                //        damagePowerUps[i].Active = false;
-                //    }
-
-                //}
+               
 
             //todo firehair collision
             for (int i = 0; i < fireHairEnemies.Count; i++)

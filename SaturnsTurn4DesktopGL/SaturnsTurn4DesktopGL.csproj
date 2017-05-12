@@ -75,6 +75,7 @@
     <Compile Include="Utility\AudioManager.cs" />
     <Compile Include="Utility\AudioManagerold.cs" />
     <Compile Include="Utility\Background.cs" />
+    <Compile Include="Utility\Collisions.cs" />
     <Compile Include="Utility\InitializeEnemies.cs" />
     <Compile Include="Utility\ParallaxingBackground.cs" />
     <Compile Include="Utility\ParticleText.cs" />
