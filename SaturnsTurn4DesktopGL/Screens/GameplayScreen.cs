@@ -628,22 +628,14 @@ namespace GameStateManagement
         private void UpdateCollision()
         {
             //use the rectangles built in intersect funtion to determine if two objects are overlapping
-            Rectangle playerRectangle;
-            Rectangle balloonEnemyRectangle2;
-            Rectangle enemyRectangle2;
-            Rectangle projectileRectangle;
-            Rectangle damagePowerUpRectangle;
-            Rectangle asteroidRectangle;
-            Rectangle shieldPowerUpRectangle;
-            Rectangle fireHairRectangle;
             //only create the rectangle once for the player
-            playerRectangle = new Rectangle((int)player.Position3.X, (int)player.Position3.Y, player.Width, player.Height);
+            var playerRectangle = new Rectangle((int)player.Position3.X, (int)player.Position3.Y, player.Width, player.Height);
 
 
             //shield powerup collision
             for (int i = 0; i < shieldPowerUps.Count; i++)
             {
-                shieldPowerUpRectangle = new Rectangle((int)shieldPowerUps[i].Position.X, (int)shieldPowerUps[i].Position.Y, shieldPowerUps[i].Width, shieldPowerUps[i].Height);
+                var shieldPowerUpRectangle = new Rectangle((int)shieldPowerUps[i].Position.X, (int)shieldPowerUps[i].Position.Y, shieldPowerUps[i].Width, shieldPowerUps[i].Height);
                 if (playerRectangle.Intersects(shieldPowerUpRectangle))
                 {
 
@@ -661,7 +653,7 @@ namespace GameStateManagement
             //damage powerup collision //try a foreach loop here
             foreach (PowerUp damagepowerup in damagePowerUps)
             {
-                 damagePowerUpRectangle = new Rectangle((int)damagepowerup.Position.X, (int)damagepowerup.Position.Y, damagepowerup.Width, damagepowerup.Height);
+                var damagePowerUpRectangle = new Rectangle((int)damagepowerup.Position.X, (int)damagepowerup.Position.Y, damagepowerup.Width, damagepowerup.Height);
                 if (playerRectangle.Intersects(damagePowerUpRectangle))
                 {
 
@@ -681,7 +673,7 @@ namespace GameStateManagement
             //todo firehair collision
             for (int i = 0; i < fireHairEnemies.Count; i++)
             {
-                fireHairRectangle = new Rectangle((int)fireHairEnemies[i].Position.X, (int)fireHairEnemies[i].Position.Y, fireHairEnemies[i].Width, fireHairEnemies[i].Height);
+               var fireHairRectangle = new Rectangle((int)fireHairEnemies[i].Position.X, (int)fireHairEnemies[i].Position.Y, fireHairEnemies[i].Width, fireHairEnemies[i].Height);
                 if (playerRectangle.Intersects(fireHairRectangle))
                 {
                     if (player.Shield > 0)
@@ -699,7 +691,7 @@ namespace GameStateManagement
             //asteroid to player collision
             for (int i = 0; i < asteroids2.Count; i++)
             {
-                asteroidRectangle = new Rectangle((int)asteroids2[i].Position.X, (int)asteroids2[i].Position.Y, asteroids2[i].Width, asteroids2[i].Height);
+                var asteroidRectangle = new Rectangle((int)asteroids2[i].Position.X, (int)asteroids2[i].Position.Y, asteroids2[i].Width, asteroids2[i].Height);
                 if (playerRectangle.Intersects(asteroidRectangle))
                 {
                     if (player.Shield > 0)
@@ -726,7 +718,7 @@ namespace GameStateManagement
             //todo collision with balloonenemy and player
             for (int i = 0; i < balloonEnemies.Count; i++)
             {
-                balloonEnemyRectangle2 = new Rectangle((int)balloonEnemies[i].Position.X, (int)balloonEnemies[i].Position.Y, balloonEnemies[i].Width, balloonEnemies[i].Height);
+               var balloonEnemyRectangle2 = new Rectangle((int)balloonEnemies[i].Position.X, (int)balloonEnemies[i].Position.Y, balloonEnemies[i].Width, balloonEnemies[i].Height);
                 if (playerRectangle.Intersects(balloonEnemyRectangle2))
                 {
 
@@ -749,7 +741,7 @@ namespace GameStateManagement
             for (int i = 0; i < enemies.Count; i++)
             {
 
-                enemyRectangle2 = new Rectangle((int)enemies[i].Position.X, (int)enemies[i].Position.Y, enemies[i].Width, enemies[i].Height);
+                var enemyRectangle2 = new Rectangle((int)enemies[i].Position.X, (int)enemies[i].Position.Y, enemies[i].Width, enemies[i].Height);
                 //determine if the thwo objects collided with each other
                 if (playerRectangle.Intersects(enemyRectangle2))
                 {
@@ -782,14 +774,14 @@ namespace GameStateManagement
             {
 
                 //see if this works here
-                projectileRectangle = new Rectangle((int)projectiles[i].Position.X - projectiles[i].Width , (int)projectiles[i].Position.Y - projectiles[i].Height , projectiles[i].Width, projectiles[i].Height);
+                var projectileRectangle = new Rectangle((int)projectiles[i].Position.X - projectiles[i].Width , (int)projectiles[i].Position.Y - projectiles[i].Height , projectiles[i].Width, projectiles[i].Height);
 
                 for (int j = 0; j < balloonEnemies.Count; j++)
                 {
                     //create the rectangles we need to determine if we collided with each other
 
                     // projectileRectangle = new Rectangle((int)projectiles[i].Position.X - projectiles[i].Width / 2, (int)projectiles[i].Position.Y - projectiles[i].Height / 2, projectiles[i].Width, projectiles[i].Height);
-                    balloonEnemyRectangle2 = new Rectangle((int)balloonEnemies[j].Position.X - balloonEnemies[j].Width / 2, (int)balloonEnemies[j].Position.Y - balloonEnemies[j].Height / 2, balloonEnemies[j].Width, balloonEnemies[j].Height);
+                   var balloonEnemyRectangle2 = new Rectangle((int)balloonEnemies[j].Position.X - balloonEnemies[j].Width / 2, (int)balloonEnemies[j].Position.Y - balloonEnemies[j].Height / 2, balloonEnemies[j].Width, balloonEnemies[j].Height);
                     //determine if the two objects collide with each other
                     if (projectileRectangle.Intersects(balloonEnemyRectangle2))
                     {
@@ -800,7 +792,7 @@ namespace GameStateManagement
                 //projectile vs asteroids
                 for (int k = 0; k < asteroids2.Count; k++)
                 {
-                    asteroidRectangle = new Rectangle((int)asteroids2[k].Position.X - asteroids2[k].Width / 2, (int)asteroids2[k].Position.Y - asteroids2[k].Height / 2, asteroids2[k].Width, asteroids2[k].Height);
+                    var asteroidRectangle = new Rectangle((int)asteroids2[k].Position.X - asteroids2[k].Width / 2, (int)asteroids2[k].Position.Y - asteroids2[k].Height / 2, asteroids2[k].Width, asteroids2[k].Height);
                     if (projectileRectangle.Intersects(asteroidRectangle))
                     {
                         asteroids2[k].Health -= projectiles[i].Damage;
@@ -814,7 +806,7 @@ namespace GameStateManagement
                     //create the rectanles we need to determine if we collided with each other
                    // projectileRectangle = new Rectangle((int)projectiles[i].Position.X - projectiles[i].Width / 2, (int)projectiles[i].Position.Y - projectiles[i].Height / 2, projectiles[i].Width, projectiles[i].Height);
 
-                    enemyRectangle2 = new Rectangle((int)enemies[t].Position.X - enemies[t].Width / 2, (int)enemies[t].Position.Y - enemies[t].Height / 2, enemies[t].Width, enemies[t].Height);
+                    var enemyRectangle2 = new Rectangle((int)enemies[t].Position.X - enemies[t].Width / 2, (int)enemies[t].Position.Y - enemies[t].Height / 2, enemies[t].Width, enemies[t].Height);
                     //determine if the two objects collide with each other
                     if (projectileRectangle.Intersects(enemyRectangle2))
                     {
