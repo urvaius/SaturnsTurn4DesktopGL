@@ -305,7 +305,9 @@ namespace GameStateManagement
             if (otherScreenHasFocus.Equals(false))
             {
                 if (AudioManager.IsInitialized.Equals(true))
-                    AudioManager.PlaySound("gamemusic");
+                { }
+                    //TODO change game music sucks
+                   // AudioManager.PlaySound("gamemusic");
             }
             else
             {
@@ -629,7 +631,8 @@ namespace GameStateManagement
         {
             //use the rectangles built in intersect funtion to determine if two objects are overlapping
             //only create the rectangle once for the player
-            var playerRectangle = new Rectangle((int)player.Position3.X, (int)player.Position3.Y, player.Width, player.Height);
+            var playerRectangle = new Rectangle((int)player.Position3.X, (int)player.Position3.Y, player.Width -25, player.Height -20);
+            
 
 
             //shield powerup collision
